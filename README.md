@@ -1,0 +1,7 @@
+![Captura de pantalla (52)](https://github.com/Rene305/crud_django_libros/assets/132528856/a5f9ab59-9f36-407d-9916-5e2e7b95efd1)
+![Captura de pantalla (53)](https://github.com/Rene305/crud_django_libros/assets/132528856/0bcaf568-285d-4be1-9419-42120a831bcc)
+![Captura de pantalla (55)](https://github.com/Rene305/crud_django_libros/assets/132528856/215316a9-a5c7-4947-bf1e-627ea457b621)
+![Captura de pantalla (56)](https://github.com/Rene305/crud_django_libros/assets/132528856/40400b6c-b10f-494e-a65e-c4bfacf99711)
+![Captura de pantalla (59)](https://github.com/Rene305/crud_django_libros/assets/132528856/b118f210-9aac-4f34-89a1-0ab25fd43fdd)
+![Captura de pantalla (60)](https://github.com/Rene305/crud_django_libros/assets/132528856/4573711d-23af-4ce1-a333-5043891bdd73)
+![Captura de pantalla (62)](https://github.com/Rene305/crud_django_libros/assets/132528856/57614f7f-246e-42c2-b973-682872386bd5)

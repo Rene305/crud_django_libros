@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>Lista de Libros</h2>
+    <a href="{% url 'book_create' %}" class="btn btn-primary mb-3">Agregar Libro</a>
+    <div class="row">
+        {% for book in books %}
+        <div class="d-flex justify-content-center col-lg-4 col-md-5 col-sm-6 mb-2">
+            <div class="card">
+                {% if book.cover_image %}
+                    <!-- Utilizamos clases de Bootstrap para ajustar el tamaño de la imagen -->
+                    <img src="{{ book.cover_image.url }}" class="card-img-top img-fluid" style="height: 300px; object-fit: cover;" alt="Cover Image">
+                {% else %}
+                    <p>No hay imagen disponible</p>
+                {% endif %}
+                <div class="card-body">
+                    <h5 class="card-title">{{ book.title }}</h5>
+                    <p class="card-text">Autor: {{ book.author }}</p>
+                    <p class="card-text">Fecha Publicacion: <strong>{{book.fecha_publi}}</strong></p>
+                    <a href="{% url 'book_detail' book.pk %}" class="btn btn-primary">Ver Detalles</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

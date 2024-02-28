@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="d-flex justify-content-center container mt-4">
+    <div class="card w-50 ">
+        {% if book.cover_image %}
+        <img src="{{ book.cover_image.url }}" class="card-img-top" alt="...">
+        {% else %}
+        <p>No hay imagen disponibe</p>
+        {% endif %}
+        <div class="card-body">
+            <h5 class="card-title">{{ book.title }}</h5>
+            <p class="card-text">Autor: {{ book.author }}</p>
+            <p class="card-text">Fecha Publicacion: <strong>{{book.fecha_publi}}</strong></p>
+            <a href="{% url 'book_update' book.pk %}" class="btn btn-primary">Editar</a>
+            <form action="{% url 'book_delete' book.pk %}" method="post" style="display: inline;">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-danger">Eliminar</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
